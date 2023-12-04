@@ -5,6 +5,7 @@ import Signup from './Signup'
 import Home from './Home';
 import Opcoes from './Opcoes';
 import AddArtigo from './AddArtigo';
+import AddEventos from './AddEventos'
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
          <Route path ='/home' element={<Home />}></Route>
          <Route path ='/opcoes' element={<Opcoes />}></Route>
          <Route path ='/addartigo' element={<AddArtigo />}></Route>
-         
+         <Route path ='/addeventos' element={<AddEventos />}></Route>         
       </Routes>
       </BrowserRouter>
   
