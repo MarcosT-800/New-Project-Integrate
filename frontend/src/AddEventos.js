@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import Validation from './EventosValidation'
 import NavbarLogin from '../src/components/navbarLogin/navbarLogin'
+import { Righteous } from '@fontsource/righteous';
 
 function AddEventos() {
     const [values, setValues] = useState({
@@ -42,7 +43,7 @@ function AddEventos() {
             >
 
                 <div className="bg-white p-4 rounded w-75 mx-auto my-auto text-center text-base mt-6">
-                    <h2 className="mb-3 text-indigo-900" style={{ color: "#1D1D47", fontFamily: "Righteous", letterSpacing: "1px", fontWeight: "lighter", fontSize: "55px"}}>Criar Evento</h2>
+                    <h2 className="mb-3 text-indigo-900" style={{ color: "#1D1D47", fontFamily: "Righteous", letterSpacing: "1px", fontWeight: "500px", fontSize: "45px"}}>Criar Evento</h2>
                     <form action="" onSubmit={handleSubmit}>
                         <div className="mb-3">
                             <label htmlFor="nome" className="d-flex justify-content-start pr-2"><strong>Nome</strong></label>

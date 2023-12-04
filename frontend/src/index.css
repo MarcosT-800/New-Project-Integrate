@@ -1,7 +1,6 @@
 body {
   margin: 0;
-  font-family:  'Righteous', 
-    sans-serif;
+  font-family: 'Righteous';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
