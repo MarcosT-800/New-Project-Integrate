@@ -32,8 +32,9 @@ function Signup() {
     return (
         
         <div className='d-flex justify-content-center align-items-center vh-100'
-        style={{background: '#1D1D37'}}
+        style={{background: '#1D1D37', height: 'auto'}}
         >
+        <NavbarLogin/>
         <div className="d-flex flex-row w-100 h-100 items-center">
         <img
                     src="/backgroundLogin.png"

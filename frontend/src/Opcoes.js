@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import {Link, useNavigate} from 'react-router-dom'
+import NavbarLogin from '../src/components/navbarLogin/navbarLogin'
+
 
 
 function Opcoes() {
@@ -7,9 +9,11 @@ function Opcoes() {
     return (
         
         <div 
-        className="flex justify-content-center align-items-center vh-100"
-        style={{background: '#1D1D37'}}
+        className="flex justify-content-center align-items-center"
+        style={{background: '#1D1D37', height: 'auto'}}
         >
+                        <NavbarLogin/>
+
  <div className="d-flex flex-row w-100 h-100 items-center">
  <img
                     src="/backgroundLogin.png"

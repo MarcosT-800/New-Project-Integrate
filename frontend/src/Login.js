@@ -38,8 +38,8 @@ function Login() {
     return (
         <>
         <div
-            className="flex justify-content-center align-items-center vh-100"
-            style={{background: '#1D1D37', height: '100%'}}
+            className="flex justify-content-center align-items-center"
+            style={{background: '#1D1D37', height: 'auto'}}
             >
             <NavbarLogin/>
             <div className="d-flex flex-row w-100 h-100 items-center">
