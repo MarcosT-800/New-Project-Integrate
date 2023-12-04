@@ -49,7 +49,7 @@ app.get("/artigo", (req, res) =>{
     })
 })
 
-app.post("/adartigo", (req,res)=>{
+app.post("/addartigo", (req,res)=>{
     const sql = "INSERT INTO artigo (`autor`,`orientador`,`resumo` VALUES (?)"
     const values = [
         req.body.autor,
@@ -60,6 +60,31 @@ app.post("/adartigo", (req,res)=>{
     db.query(sql,[values],(err,data)=>{
         if(err) return res.json(err)
         return res.json(data)    
+    })
+})
+
+app.get("/participantes", (req, res) =>{
+    const sql = "SELECT email FROM professor"
+    db.query(sql,(err,data)=>{
+        if(err) return res.json(err)
+        return res.json(data)
+    })
+})
+
+app.post('/addeventos', (req, res) => {
+    const sql = "INSERT INTO eventos (`nome`, `data`,`horas`, `resumo`,`organizador`) VALUES (?)";
+    const values = [
+        req.body.nome,
+        req.body.data,
+        req.body.horas,
+        req.body.resumo,
+        req.body.organizador 
+    ]
+    db.query(sql, [values], (err, data) => {
+        if(err) {
+            return res.json("Error");
+        }
+        return res.json(data);
     })
 })
 

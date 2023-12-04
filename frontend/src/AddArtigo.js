@@ -19,7 +19,7 @@ function AddArtigo() {
     const handleClick = async e => {
         e.preventDefault();
         try {
-            await axios.post('http://localhost:8081/adartigo', artigo)
+            await axios.post('http://localhost:8081/addartigo', artigo)
             navigate("/home")
         } catch (err) {
             console.log(err)
@@ -69,7 +69,7 @@ function AddArtigo() {
                         <div className="d-flex justify-content-between">
 
                         <button onClick={handleClick} className="btn btn-primary rounded-2 bg-gradient-to-dark mr-2"
-          style={{background: "#1D1D47", width: '45%'}}> Criar </button>
+          style={{background: "#1D1D47", width: '45%'}}> <Link to="/home">Criar</Link> </button>
 
                         <Link to="/home" className="btn btn-primary rounded-2 bg-gradient-to-dark mr-2"
           style={{background: "#1D1D47", width: '45%'}}>Cancelar</Link>

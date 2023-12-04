@@ -27,7 +27,7 @@ function Login() {
         if (err.email === '' && err.senha === '') {
             axios.post('http://localhost:8081/login', values).then((res) => {
                 if (res.data === 'Success') {
-                    navigate('/home');
+                    navigate('/addartigo');
                 } else {
                     alert('Conta não existe');
                 }
@@ -93,13 +93,12 @@ function Login() {
           >
           Entrar
         </button>
-        <button
-          type="reset"
-          className="btn btn-secondary rounded-2 bg-gradient-to-dark"
-          style={{background: "#1D1D47", width: '40%'}}
-          >
-          Limpar
-        </button>
+        
+          <Link to="/opcoes"  className="btn btn-secondary rounded-2 bg-gradient-to-dark"
+          style={{background: "#1D1D47", width: '40%'}}> 
+          Cadastrar
+          </Link>
+       
       </div>
     </form>
   </div>

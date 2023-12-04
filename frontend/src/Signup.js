@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import {Link, useNavigate} from 'react-router-dom'
 import Validation from './SignupValidation'
 import axios from 'axios'
+import NavbarLogin from '../src/components/navbarLogin/navbarLogin'
 
 function Signup() {
     const [values, setValues] = useState({

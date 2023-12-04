@@ -49,7 +49,7 @@ app.get("/artigo", (req, res) =>{
     })
 })
 
-app.post("/adartigo", (req,res)=>{
+app.post("/addartigo", (req,res)=>{
     const sql = "INSERT INTO artigo (`autor`,`orientador`,`resumo` VALUES (?)"
     const values = [
         req.body.autor,
@@ -71,7 +71,7 @@ app.get("/participantes", (req, res) =>{
     })
 })
 
-app.post('/adeventos', (req, res) => {
+app.post('/addeventos', (req, res) => {
     const sql = "INSERT INTO eventos (`nome`, `data`,`horas`, `resumo`,`organizador`) VALUES (?)";
     const values = [
         req.body.nome,
